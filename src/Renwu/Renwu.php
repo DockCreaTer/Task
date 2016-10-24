@@ -83,7 +83,7 @@ class Renwu extends PluginBase implements Listener{
 	}
     public function onDisable()
     {
-    $this->getLogger()->info(">>   §bRenwu - 卸载!");
+    $this->getLogger()->info(">>   §bRenwu - 卸載!");
 	}
 	//------------------------------------------------------------
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
@@ -109,7 +109,7 @@ class Renwu extends PluginBase implements Listener{
 						if(!isset($args[1])){$this->ErrorMessage(2,$sender);return true;}
 						if(!isset($this->RenwuId[$args[1]])){$this->ErrorMessage(1,$sender);echo("hi1 \n");return true;}
 						if($this->getRenwu($args[1],$sender,$ny,$nm,$nd) == 4){
-							$sender->sendMessage("成功接受任务!");
+							$sender->sendMessage("成功接受任務!");
 							}
 						else{
 							$returned = $this->getRenwu($args[1],$sender,$ny,$nm,$nd);
@@ -152,12 +152,12 @@ class Renwu extends PluginBase implements Listener{
 		$ThisRenwu = $this->RenwuId[$id];
 		$this->user->set($sender->getName() . "Renwu" . $id . "Doing",2);
 		$this->user->save();
-		$sender->sendMessage("任务要求：" . $this->RenwuInt[$id] . "!");
+		$sender->sendMessage("任務要求：" . $this->RenwuInt[$id] . "!");
 		return 4;
 	}
 	//000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 	public function RenwuList($sender,$id){
-		$sender->sendMessage("任务" . $id . "完成条件：");
+		$sender->sendMessage("任務" . $id . "完成條件：");
 		$sender->sendMessage($this->RenwuInt[$id] . "!");
 		return true;
 	}
@@ -203,14 +203,14 @@ class Renwu extends PluginBase implements Listener{
 	//000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 public function ErrorMessage($ErrorID,$Sender){
   switch($ErrorID){
-  case 1 :$Sender->sendMessage(">>   §b并没有这个任务");break;
-  case 2 :$Sender->sendMessage(">>   §b格式：/renwu <jieshou/tijiao/list> [任务ID]");break;
-  case 3 :$Sender->sendMessage(">>   §b您已经接受这个任务了!");break;
-  case 4 :$Sender->sendMessage(">>   §b您并没有达到任务完成要求!");break;
-  case 5 :$Sender->sendMessage(">>   §b一天只能接受一次这个任务!");break;
-  case 6 :$Sender->sendMessage(">>   §b你今天已经完成过这个任务了！");break;
-  case 7 :$Sender->sendMessage(">>   §b你还没接受这个任务！");break;
-  case 8 :$Sender->sendMessage(">>   §b你只能完成这个任务一次!");break;
+  case 1 :$Sender->sendMessage(">>   §b並沒有這個任務");break;
+  case 2 :$Sender->sendMessage(">>   §b格式：/renwu <jieshou/tijiao/list> [任務ID]");break;
+  case 3 :$Sender->sendMessage(">>   §b您已經接受這個任務了!");break;
+  case 4 :$Sender->sendMessage(">>   §b您並沒有達到任務完成要求!");break;
+  case 5 :$Sender->sendMessage(">>   §b一天只能接受一次這個任務!");break;
+  case 6 :$Sender->sendMessage(">>   §b你今天已經完成過這個任務了！");break;
+  case 7 :$Sender->sendMessage(">>   §b你還沒接受這個任務！");break;
+  case 8 :$Sender->sendMessage(">>   §b你只能完成這個任務一次!");break;
   }
 }
 }
