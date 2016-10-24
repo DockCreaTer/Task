@@ -1,5 +1,6 @@
 # RenWu
-一個Pocketmine用的任務插件
 
+#This plugin write by DKQoo2 & TSRlightda
 
-#DKQoo2 is a mother fucker XDDDDDD
+#本插件由DKQoo2 &　TSRlightda 共同撰寫
+
