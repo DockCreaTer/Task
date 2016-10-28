@@ -1,6 +1,6 @@
 # RenWu
 
-#This plugin write by DKQoo2 & TSRlightda
+#This plugin write by TSRlightda
 
-#本插件由DKQoo2 &　TSRlightda 共同撰寫
+#本插件由TSRlightda 獨自撰寫, 我們給他拍拍手喔
 
